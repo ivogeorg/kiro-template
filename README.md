@@ -103,7 +103,7 @@ This template includes 18 powerful development prompts:
 ### Core Development
 - **`@prime`** - Load comprehensive project context
 - **`@plan-feature`** - Create detailed implementation plans
-- **`@execute`** - Execute plans with systematic task management
+- **`@execute`** - Execute plans with systematic task management. Prompts for manual validation. Updates feature status and invokes **`@devlog-update`**
 - **`@next`** - Shows development horizon and recommends next feature to implement. After user choice, automatically calls **`@plan-feature`** and **`@execute`**
 - **`@quickstart`** - Interactive project setup wizard
 
@@ -114,6 +114,7 @@ This template includes 18 powerful development prompts:
 - **`@system-review`** - Analyze implementation vs plan
 
 ### Documentation & Planning
+- **`@devlog-update`** - Update development log after feature completion with automated data gathering and AI-generated drafts
 - **`@create-prd`** - Generate Product Requirements Documents
 - **`@execution-report`** - Generate implementation reports
 - **`@rca`** - Root cause analysis for issues
