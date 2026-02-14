@@ -70,4 +70,62 @@ Provide a concise summary covering:
 - Recent changes or development focus (if git repository)
 - Any immediate observations or concerns
 
+### Development Horizon (if .kiro/features.json exists)
+
+**Check for feature graph:**
+```bash
+if [ -f ".kiro/features.json" ]; then
+  echo "Feature graph found - analyzing roadmap"
+fi
+```
+
+**If .kiro/features.json exists, analyze and show horizon summary:**
+
+1. **Read .kiro/features.json** and parse feature data
+2. **Calculate statistics:**
+   - Total features by version (Demo/V1/V2)
+   - Features by status (completed/in-progress/not-started/blocked)
+   - Features by priority (Must-have/Should-have/Could-have)
+3. **Calculate development horizon:**
+   - Features with status="not-started" AND all dependencies completed
+   - Group by version and priority
+4. **Identify next recommended feature:**
+   - Current version's Must-haves first
+   - Score by: unblocking power + (low complexity) + (showability for Demo)
+   - Pick highest scoring ready feature
+
+**Display horizon summary:**
+```
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎯 DEVELOPMENT HORIZON SUMMARY
+
+Current Sprint: [Demo|Version 1|Version 2]
+Progress: [N] completed, [M] in-progress, [P] ready to implement
+
+Feature Breakdown:
+  • Demo: [X] features ([Y] complete, [Z] remaining)
+  • Version 1: [A] features (all blocked by Demo)
+  • Version 2: [B] features (all blocked by V1)
+
+Ready Features: [P] (dependencies met, not started)
+Blocked Features: [Q] (waiting on dependencies)
+In Progress: [M] (currently being implemented)
+
+Next Recommended: [feature-id] - [Feature Name]
+  Priority: [Must-have] ([Sprint])
+  Why: [Brief reason - e.g., "Foundational, unblocks 3 features"]
+  Dependencies: [All met ✓]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💡 Ready to select next feature? Run: @next
+
+```
+
+**If .kiro/features.json doesn't exist:**
+```
+💡 No feature graph found. Run @design-digest to create feature roadmap.
+```
+
 **Make this summary easy to scan - use bullet points and clear headers.**

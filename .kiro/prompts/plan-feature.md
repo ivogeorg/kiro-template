@@ -14,6 +14,22 @@ Transform a feature request into a **comprehensive implementation plan** through
 
 **Key Philosophy**: Context is King. The plan must contain ALL information needed for implementation - patterns, mandatory reading, documentation, validation commands - so the execution agent succeeds on the first attempt.
 
+**⚠️ CRITICAL: NO INTERACTIVE COMMANDS**
+
+Plans must ONLY contain **non-interactive commands**. Interactive commands (that wait for user input) will hang execution because prompts don't display to the user.
+
+**FORBIDDEN Commands:**
+- `npm create` / `npm init` (without `-y` flag)
+- `git commit` (without `-m` flag)
+- Any command with interactive prompts or wizards
+- Commands that ask for confirmation without `-y` / `--yes` / `--force` flags
+
+**REQUIRED Approach:**
+- Use non-interactive flags: `-y`, `--yes`, `--no-interaction`, `--force`
+- Create files manually instead of using scaffolding tools
+- Break interactive commands into explicit file creation steps
+- Document what would be created, then create it explicitly
+
 ## Planning Process
 
 ### Phase 1: Feature Understanding
@@ -62,7 +78,7 @@ So that <benefit/value>
 
 - Catalog external libraries relevant to feature
 - Understand how libraries are integrated (check imports, configs)
-- Find relevant documentation in docs/, ai_docs/, .agents/reference or ai-wiki if available
+- Find relevant documentation in docs/, ai_docs/, .kiro/reference or ai-wiki if available
 - Note library versions and compatibility requirements
 
 **4. Testing Patterns**
@@ -141,7 +157,7 @@ So that <benefit/value>
 
 **Create comprehensive plan with the following structure:**
 
-Whats below here is a template for you to fill for th4e implementation agent:
+What's below here is a template for you to fill for the implementation agent:
 
 ```markdown
 # Feature: <feature-name>
@@ -292,7 +308,7 @@ Use information-dense keywords for clarity:
 
 ## TESTING STRATEGY
 
-<Define testing approach based on project's test framework and patterns discovered in during research>
+<Define testing approach based on project's test framework and patterns discovered during research>
 
 ### Unit Tests
 
@@ -374,12 +390,12 @@ Execute every command to ensure zero regressions and 100% feature correctness.
 
 ## Output Format
 
-**Filename**: `.agents/plans/{kebab-case-descriptive-name}.md`
+**Filename**: `.kiro/plans/{kebab-case-descriptive-name}.md`
 
 - Replace `{kebab-case-descriptive-name}` with short, descriptive feature name
 - Examples: `add-user-authentication.md`, `implement-search-api.md`, `refactor-database-layer.md`
 
-**Directory**: Create `.agents/plans/` if it doesn't exist
+**Directory**: Create `.kiro/plans/` if it doesn't exist
 
 ## Quality Criteria
 
