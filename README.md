@@ -107,6 +107,7 @@ This template includes 18 powerful development prompts:
 - **`@plan-feature`** - Create detailed implementation plans
 - **`@execute`** - Execute plans with systematic task management. Prompts for manual validation. Updates feature status and invokes **`@devlog-update`**
 - **`@next`** - Shows development horizon and recommends next feature to implement. After user choice, automatically calls **`@plan-feature`** and **`@execute`**
+- **`@add-feature`** - Interactively add a new feature to existing roadmap with proper dependency management
 - **`@quickstart`** - Interactive project setup wizard
 
 ### Quality Assurance
@@ -122,6 +123,9 @@ This template includes 18 powerful development prompts:
 - **`@rca`** - Root cause analysis for issues
 - **`@implement-fix`** - Implement fixes based on analysis
 
+### Reporting
+- **`@stakeholder-update`** - Generate timestamped stakeholder update report in `reports`
+  
 ## Examples
 
 Check the `examples/` folder for:
