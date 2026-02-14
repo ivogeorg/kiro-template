@@ -132,6 +132,9 @@ Ensure these files are complete and high-quality:
 
 This template includes 11 powerful development prompts:
 
+## Design
+- **`@design-digest`** - Read docs from `.kiro/design` and synthesize an actionable feature roadmap with a priority graph (`features.json`)
+
 ### Core Development
 - **`@prime`** - Load comprehensive project context
 - **`@plan-feature`** - Create detailed implementation plans
