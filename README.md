@@ -44,6 +44,8 @@ Your project is now configured! Use these core prompts:
 
 **Note:** Your typical workflow will be `@prime` → `@plan-feature` → `@execute` → `@code-review`, but feel free to change it however you want. These commands may require additional details (like what feature to plan or which plan file to execute), but Kiro will ask for these parameters after you invoke the command.
 
+**UPDATE:** Workflow is guided by the feature priority graph and the user's choice `@prime` → `@next` (loop) → `@code-review`. These commands may require additional details, but Kiro will ask for these parameters after you invoke the command.
+
 ## Development Workflow (Customize this However You Want!)
 
 ### Initial Setup (One-Time)
