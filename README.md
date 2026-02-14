@@ -100,6 +100,7 @@ Ensure these files are complete and high-quality:
 This template includes 18 powerful development prompts:
 
 ## Design
+- **`@quickstart`** - Interactive project bootup (completes steering doc templates with project details, understands dev workflow, learns about available prompts and commands, explores advanced features)
 - **`@design-digest`** - Read docs from `.kiro/design` and synthesize an actionable feature roadmap with a priority graph (`features.json`)
 
 ### Core Development
