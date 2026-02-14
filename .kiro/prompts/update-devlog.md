@@ -1,1 +1,0 @@
-The file is at `./kiro/`. Per Cole's advice, this will be called at the end of a session (it consumes very little extra context) or before switching to another session. Syntax TBD in [`DEVLOG.md`](DEVLOG.md).
