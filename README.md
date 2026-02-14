@@ -104,6 +104,7 @@ This template includes 18 powerful development prompts:
 - **`@prime`** - Load comprehensive project context
 - **`@plan-feature`** - Create detailed implementation plans
 - **`@execute`** - Execute plans with systematic task management
+- **`@next`** - Shows development horizon and recommends next feature to implement. After user choice, automatically calls **`@plan-feature`** and **`@execute`**
 - **`@quickstart`** - Interactive project setup wizard
 
 ### Quality Assurance
