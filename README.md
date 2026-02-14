@@ -1,33 +1,25 @@
-# Dynamous Kiro Hackathon Quickstart Template
-
-🚀 **Your starting point for the Dynamous and Kiro Hackathon** - A comprehensive template with pre-configured Kiro CLI setup, development workflows, and submission guidelines.
+# Kiro Project Template
 
 > **📖 New to Kiro?** Check out [kiro-guide.md](kiro-guide.md) to quickly get accustomed to how Kiro works and understand its unique features for the hackathon.
-
-## About the Hackathon
-
-The **Kiro Hackathon** is a coding competition where developers build real-world applications using the Kiro CLI. Show off your AI-powered development skills and compete for **$17,000 in prizes**.
-
-- **📅 Dates**: January 5-23, 2026
-- **💰 Prize Pool**: $17,000 across 10 winners
-- **🎯 Theme**: Open - build anything that solves a real problem
-- **🔗 More Info**: [dynamous.ai/kiro-hackathon](https://dynamous.ai/kiro-hackathon)
 
 ## What's Included
 
 This template provides everything you need to get started:
 
 - **📋 Steering Documents**: Pre-configured project templates (product.md, tech.md, structure.md)
-- **⚡ Custom Prompts**: 11 powerful development workflow prompts
+- **⚡ Custom Prompts**: 18 powerful development workflow prompts
 - **📖 Examples**: Sample README and DEVLOG showing best practices
-- **🏆 Hackathon Tools**: Specialized code review prompt for submission evaluation
 
-## Quick Start
+## Use as Template
+
+**NOTE:** This repository is meant to be used as a template for new projects. It should only be updated with **workflow improvements**.
+
+## Quick Start (Deprecated)
 
 ### 1. Clone This Template
 ```bash
-git clone https://github.com/coleam00/dynamous-kiro-hackathon
-cd dynamous-kiro-hackathon
+git clone https://github.com/ivogeorg/kiro-template.git
+cd kiro-template
 ```
 
 ### 2. Run the Setup Wizard
@@ -74,34 +66,7 @@ Your project is now configured! Use these core prompts:
 2. **Polish documentation**: Ensure README.md and DEVLOG.md are complete
 3. **Verify requirements**: Check all submission criteria are met
 
-## Submission Requirements
-
-Your submission will be judged on these criteria (100 points total):
-
-### Application Quality (40 points)
-- **Functionality & Completeness** (15 pts): Does it work as intended?
-- **Real-World Value** (15 pts): Does it solve a genuine problem?
-- **Code Quality** (10 pts): Is the code well-structured and maintainable?
-
-### Kiro CLI Usage (20 points)
-- **Effective Use of Features** (10 pts): How well did you leverage Kiro CLI?
-- **Custom Commands Quality** (7 pts): Quality of your custom prompts
-- **Workflow Innovation** (3 pts): Creative use of Kiro CLI features
-
-### Documentation (20 points)
-- **Completeness** (9 pts): All required documentation present
-- **Clarity** (7 pts): Easy to understand and follow
-- **Process Transparency** (4 pts): Clear development process documentation
-
-### Innovation (15 points)
-- **Uniqueness** (8 pts): Original approach or solution
-- **Creative Problem-Solving** (7 pts): Novel technical solutions
-
-### Presentation (5 points)
-- **Demo Video** (3 pts): Clear demonstration of your project
-- **README** (2 pts): Professional project overview
-
-## Required Documentation
+## Documentation
 
 Ensure these files are complete and high-quality:
 
@@ -130,7 +95,7 @@ Ensure these files are complete and high-quality:
 
 ## Available Prompts
 
-This template includes 11 powerful development prompts:
+This template includes 18 powerful development prompts:
 
 ## Design
 - **`@design-digest`** - Read docs from `.kiro/design` and synthesize an actionable feature roadmap with a priority graph (`features.json`)
@@ -179,7 +144,7 @@ These examples show the level of detail and professionalism expected for hackath
 ## Getting Help
 
 - **Kiro CLI Documentation**: [kiro.dev/docs/cli](https://kiro.dev/docs/cli)
-- **Hackathon Community**: Join the Dynamous community for support
+- **Dynamous Community**: Join the Dynamous community for support
 - **Built-in Help**: Use `/help` in Kiro CLI for command assistance
 
 ---
